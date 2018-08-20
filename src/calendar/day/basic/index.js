@@ -58,7 +58,7 @@ class Day extends Component {
       if (marking.dotColor) {
         dotStyle.push({backgroundColor: marking.dotColor});
       }
-      dot = (<View style={dotStyle}/>);
+      dot = (<Text style={{ fontSize: 12 }}>{marking.label}</Text>);
     }
 
     if (marking.selected) {
